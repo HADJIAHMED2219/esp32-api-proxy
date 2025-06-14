@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Lien Google Apps Script
-GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxRz34bDGikrFP6avcTUl9AMM6HI6JyJT4NbAN_fxWYNgUaHulubl6mIfK4r6nk-Qb9/exec'
+GOOGLE_SCRIPT_URL = 'https://script.google.com/?ID=macros/s/AKfycbxRz34bDGikrFP6avcTUl9AMM6HI6JyJT4NbAN_fxWYNgUaHulubl6mIfK4r6nk-Qb9/exec'
 
 @app.route('/sync', methods=['GET'])
 def sync():
