@@ -20,5 +20,9 @@ def sync():
     except Exception as e:
         return f"Erreur serveur proxy : {str(e)}", 500
 
+@app.route('/')
+def home():
+    return "Bienvenue sur l'API Proxy ESP32 vers Google Sheets !"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
